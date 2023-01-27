@@ -56,15 +56,47 @@
 		F5DFFBA12983EE0A00232C49 /* FirebaseToDo */ = {
 			isa = PBXGroup;
 			children = (
-				F5DFFBA22983EE0A00232C49 /* AppDelegate.swift */,
-				F5DFFBA42983EE0A00232C49 /* SceneDelegate.swift */,
-				F5DFFBA62983EE0A00232C49 /* ViewController.swift */,
-				F5DFFBA82983EE0A00232C49 /* Main.storyboard */,
+				F5DFFBB92983EECE00232C49 /* Model */,
+				F5DFFBB82983EEBD00232C49 /* Controller */,
+				F5DFFBB72983EEAD00232C49 /* View */,
 				F5DFFBAB2983EE0B00232C49 /* Assets.xcassets */,
-				F5DFFBAD2983EE0C00232C49 /* LaunchScreen.storyboard */,
+				F5DFFBB62983EE9400232C49 /* AppDelegate */,
 				F5DFFBB02983EE0C00232C49 /* Info.plist */,
 			);
 			path = FirebaseToDo;
+			sourceTree = "<group>";
+		};
+		F5DFFBB62983EE9400232C49 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F5DFFBA22983EE0A00232C49 /* AppDelegate.swift */,
+				F5DFFBA42983EE0A00232C49 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F5DFFBB72983EEAD00232C49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5DFFBA82983EE0A00232C49 /* Main.storyboard */,
+				F5DFFBAD2983EE0C00232C49 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5DFFBB82983EEBD00232C49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5DFFBA62983EE0A00232C49 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5DFFBB92983EECE00232C49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
