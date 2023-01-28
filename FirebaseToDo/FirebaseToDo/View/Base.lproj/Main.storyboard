@@ -43,11 +43,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CZ9-fW-Mtn"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bW9-CG-naa">
                                                 <rect key="frame" x="0.0" y="54" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9MF-wS-UCd"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>

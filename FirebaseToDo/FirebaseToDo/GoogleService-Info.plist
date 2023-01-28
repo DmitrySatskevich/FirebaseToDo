@@ -30,5 +30,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:653986552375:ios:dc15d08a0f56bf036e3db2</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-todo-904d0-default-rtdb.europe-west1.firebasedatabase.app</string>
 </dict>
 </plist>
