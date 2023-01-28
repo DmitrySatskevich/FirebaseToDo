@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9mX-z8-k0Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="S1A-lQ-tQB">
-                                <rect key="frame" x="25" y="133.00000000000003" width="343" height="422.66666666666674"/>
+                                <rect key="frame" x="25" y="89.000000000000028" width="343" height="422.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-ok-GMF">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
@@ -62,7 +62,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0K-EQ-fI4">
-                                                <rect key="frame" x="0.0" y="59.333333333333371" width="343" height="39.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="59.333333333333314" width="343" height="39.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
@@ -84,7 +84,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Sdv-Mw-Wws"/>
                     <connections>
-                        <segue destination="QTw-3k-27y" kind="show" identifier="showToDo" id="Qps-oQ-OLm"/>
+                        <segue destination="PZg-QO-9qX" kind="presentation" identifier="showToDo" modalPresentationStyle="fullScreen" id="Qps-oQ-OLm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,29 +114,35 @@
                             <outlet property="delegate" destination="QTw-3k-27y" id="pLx-rJ-o8i"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDo-s" id="aO5-oF-kDa"/>
+                    <navigationItem key="navigationItem" title="ToDo-s" id="aO5-oF-kDa">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="lG1-8g-y7M"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="413-zI-Ndk"/>
+                            <barButtonItem title="Img" id="3JG-8u-b9R"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qND-gV-npo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="-2"/>
+            <point key="canvasLocation" x="2312" y="-2"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="4zJ-8i-eh9">
+        <scene sceneID="VVW-QS-zC4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9mX-z8-k0Z" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PZg-QO-9qX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NDY-wU-ZUd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sk9-Ai-8kx">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9SW-QW-nde"/>
+                        <segue destination="QTw-3k-27y" kind="relationship" relationship="rootViewController" id="x1O-5h-oAQ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O6h-4V-DD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="res-F1-73z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1540" y="-2"/>
         </scene>
     </scenes>
     <resources>
