@@ -17,6 +17,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    // отлавливает, пользователь залогирован или нет
+    var authStateDidChangeListenerHandle: AuthStateDidChangeListenerHandle!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,13 +27,13 @@ class LoginViewController: UIViewController {
         passwordTF.delegate = self
         ref = Database.database().reference(withPath: "users")
 
-        // если у нас еще есть действующий user то сделаем переход
-//        authStateDidChangeListenerHandle = Auth.auth().addStateDidChangeListener { [weak self] _, user in
-//            guard let _ = user else {
-//                return
-//            }
-//            self?.performSegue(withIdentifier: "tasksSegue", sender: nil)
-//        }
+        // если пользователь уже есть, производим переход в личный кабинет
+        authStateDidChangeListenerHandle = Auth.auth().addStateDidChangeListener { [weak self] _, user in
+            guard let _ = user else {
+                return
+            }
+            self?.performSegue(withIdentifier: "tasksSegue", sender: nil)
+        }
 
         NotificationCenter.default.addObserver(self, selector: #selector(kbDidShow), name: UIWindow.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(kbDidHide), name: UIWindow.keyboardWillHideNotification, object: nil)
@@ -45,7 +48,7 @@ class LoginViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
-//        Auth.auth().removeStateDidChangeListener(authStateDidChangeListenerHandle)
+        Auth.auth().removeStateDidChangeListener(authStateDidChangeListenerHandle)
     }
 
     @IBAction func signInAction() {

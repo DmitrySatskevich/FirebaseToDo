@@ -14,7 +14,8 @@
 		F54ADD9B298576140090EABF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F54ADD9A298576140090EABF /* FirebaseStorage */; };
 		F54ADD9D29857C280090EABF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54ADD9C29857C280090EABF /* User.swift */; };
 		F54ADD9F29857C4F0090EABF /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54ADD9E29857C4F0090EABF /* TaskModel.swift */; };
-		F54ADDA129859D310090EABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F54ADDA029859D310090EABF /* GoogleService-Info.plist */; };
+		F5DD3C132986BFB9004371E9 /* TasksTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD3C122986BFB9004371E9 /* TasksTVC.swift */; };
+		F5DD3C192986CF36004371E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5DD3C182986CF36004371E9 /* GoogleService-Info.plist */; };
 		F5DFFBA32983EE0A00232C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFFBA22983EE0A00232C49 /* AppDelegate.swift */; };
 		F5DFFBA52983EE0A00232C49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFFBA42983EE0A00232C49 /* SceneDelegate.swift */; };
 		F5DFFBA72983EE0A00232C49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFFBA62983EE0A00232C49 /* ViewController.swift */; };
@@ -26,7 +27,8 @@
 /* Begin PBXFileReference section */
 		F54ADD9C29857C280090EABF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F54ADD9E29857C4F0090EABF /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
-		F54ADDA029859D310090EABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5DD3C122986BFB9004371E9 /* TasksTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTVC.swift; sourceTree = "<group>"; };
+		F5DD3C182986CF36004371E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5DFFB9F2983EE0A00232C49 /* FirebaseToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DFFBA22983EE0A00232C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5DFFBA42983EE0A00232C49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +78,7 @@
 				F5DFFBB82983EEBD00232C49 /* Controller */,
 				F5DFFBB72983EEAD00232C49 /* View */,
 				F5DFFBAB2983EE0B00232C49 /* Assets.xcassets */,
-				F54ADDA029859D310090EABF /* GoogleService-Info.plist */,
+				F5DD3C182986CF36004371E9 /* GoogleService-Info.plist */,
 				F5DFFBB62983EE9400232C49 /* AppDelegate */,
 				F5DFFBB02983EE0C00232C49 /* Info.plist */,
 			);
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F5DFFBA62983EE0A00232C49 /* ViewController.swift */,
+				F5DD3C122986BFB9004371E9 /* TasksTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,7 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DFFBAF2983EE0C00232C49 /* LaunchScreen.storyboard in Resources */,
-				F54ADDA129859D310090EABF /* GoogleService-Info.plist in Resources */,
+				F5DD3C192986CF36004371E9 /* GoogleService-Info.plist in Resources */,
 				F5DFFBAC2983EE0B00232C49 /* Assets.xcassets in Resources */,
 				F5DFFBAA2983EE0A00232C49 /* Main.storyboard in Resources */,
 			);
@@ -202,6 +205,7 @@
 			files = (
 				F54ADD9D29857C280090EABF /* User.swift in Sources */,
 				F5DFFBA72983EE0A00232C49 /* ViewController.swift in Sources */,
+				F5DD3C132986BFB9004371E9 /* TasksTVC.swift in Sources */,
 				F54ADD9F29857C4F0090EABF /* TaskModel.swift in Sources */,
 				F5DFFBA32983EE0A00232C49 /* AppDelegate.swift in Sources */,
 				F5DFFBA52983EE0A00232C49 /* SceneDelegate.swift in Sources */,

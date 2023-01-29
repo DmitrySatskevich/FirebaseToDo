@@ -99,7 +99,7 @@
                         <outlet property="emailTF" destination="9VY-f1-ULW" id="hXr-yw-qp2"/>
                         <outlet property="errorLabel" destination="ZYf-K8-dIm" id="Obw-l4-3Ue"/>
                         <outlet property="passwordTF" destination="bW9-CG-naa" id="h4o-hQ-fgc"/>
-                        <segue destination="PZg-QO-9qX" kind="presentation" identifier="showToDo" modalPresentationStyle="fullScreen" id="Qps-oQ-OLm"/>
+                        <segue destination="PZg-QO-9qX" kind="presentation" identifier="tasksSegue" animates="NO" modalPresentationStyle="fullScreen" id="Qps-oQ-OLm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -109,7 +109,7 @@
         <!--ToDo-s-->
         <scene sceneID="J4i-6b-xwn">
             <objects>
-                <tableViewController id="QTw-3k-27y" sceneMemberID="viewController">
+                <tableViewController id="QTw-3k-27y" customClass="TasksTVC" customModule="FirebaseToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KWo-yS-Lq6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,16 +130,28 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ToDo-s" id="aO5-oF-kDa">
-                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="lG1-8g-y7M"/>
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="lG1-8g-y7M">
+                            <connections>
+                                <action selector="signOutAction:" destination="QTw-3k-27y" id="of3-QT-Lr3"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="413-zI-Ndk"/>
-                            <barButtonItem title="Img" id="3JG-8u-b9R"/>
+                            <barButtonItem systemItem="add" id="413-zI-Ndk">
+                                <connections>
+                                    <action selector="addTaskAction:" destination="QTw-3k-27y" id="ipF-gi-uG9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Img" id="3JG-8u-b9R">
+                                <connections>
+                                    <action selector="addImageAction:" destination="QTw-3k-27y" id="980-US-e7R"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qND-gV-npo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2312" y="-2"/>
+            <point key="canvasLocation" x="2250" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VVW-QS-zC4">
