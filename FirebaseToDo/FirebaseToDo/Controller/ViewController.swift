@@ -56,7 +56,8 @@ class LoginViewController: UIViewController {
         guard let email = emailTF.text,
               let password = passwordTF.text,
               email != "",
-              password != "" else {
+              password != ""
+        else {
             // показать Error
             displayErrorLabel(withText: "Info is incorrect")
             return
@@ -70,12 +71,17 @@ class LoginViewController: UIViewController {
                 // если замыкание отрабатывает без ошибок, перейти на новый экран
                 self?.performSegue(withIdentifier: "tasksSegue", sender: nil)
             }
+            
         }
     }
     
     @IBAction func signUpAction() {
         // проверяем все поля
-        guard let email = emailTF.text, let password = passwordTF.text, email != "", password != "" else {
+        guard let email = emailTF.text,
+                let password = passwordTF.text,
+                email != "",
+                password != ""
+        else {
             displayErrorLabel(withText: "Info is incorrect")
             return
         }
